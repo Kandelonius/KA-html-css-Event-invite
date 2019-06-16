@@ -6,34 +6,57 @@
         <title>Project: Event invite</title>
         <style>
             body{
-                background: rgb(5, 108, 252);
+                background: rgb(150, 150, 150);
             }
             h1{
+                font-family:monospace;
+                position:absolute;
                 color:gold;
-                text-align:center;
+                top:27px;
+                left:180px;
+                z-index:2;
             }
             h2{
                 margin:7px;
             }
+            #wreath-photo{
+                position:absolute;
+                left:222px;
+                z-index:1;
+            }
             #invite-backing{
+                position:relative;
+                top:130px;
                 opacity:.8;
-                background-color: rgb(210, 55, 210);
+                background-color: rgb(255, 0, 0);
                 width:56%;
             }
             #possibility-backing{
-                background-color: rgb(40, 145, 10);
+                position:relative;
+                top:140px;
+                background-color: rgb(0, 255, 0);
+                padding:5px;
+            }
+            #outcome-backing{
+                position:relative;
+                top:160px;
+                background-color: rgba(0,0,255,.3);
                 padding:5px;
             }
             #album-photo{
                 width:84px;
                 float:right;
             }
+            #other-photos{
+                float:left;
+                width:50px;
+                margin-right:20px;
+            }
         </style>
     </head>
     <body>
         <h1>You are invited!</h1>
-        
-        
+        <img id="wreath-photo"src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/b/bf/20160131164755%21Golden_laurel_wreath_T_HL_04_Kerameikos_Athens.png/120px-Golden_laurel_wreath_T_HL_04_Kerameikos_Athens.png" alt="laurel wreath gold">
         <div id='invite-backing' ><img id="album-photo" 
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Emergency_%26_I.jpg/220px-Emergency_%26_I.jpg"
         alt="Emergency & I album cover">
@@ -43,13 +66,21 @@
             </h2>
             </div>
             <div id='possibility-backing'>
-        <p>The possibilities:</p>
+        <p>Although this invite has no time or location, 
+            No date and no RSVP it is still very useful. Here 
+            are just a few things you could do with it:</p>
+        <img id="other-photos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Question_mark_1.svg/473px-Question_mark_1.svg.png"
+        alt="question mark">
         <ol>
             <li>Take this down to a disco that wouldn't have 
             you in a million years</li>
             <li>Take this to a party all the way across town</li>
             <li>Give this to your crying neighbor</li>
         </ol>
+        </div>
+        <div id="outcome-backing">
+            <p>We suspect that what you'll discover upon 
+            using this invite for these purposes is:</p>
         </div>
     </body>
 </html>
